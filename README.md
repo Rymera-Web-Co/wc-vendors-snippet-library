@@ -4,6 +4,14 @@ A collection of code snippets to enhance or extend WC Vendors Marketplace. Pleas
 
 We review and accept PRs. Have something the WC Vendors community could benefit from? Submit a PR today! 
 
+## What is available? 
+
+We have snippets organised into various sub directories to make it easier to track 
+
+developer - This contains snippets that 3rd party developers will find useful when building their integrations. 
+vendor-dashboard - The snippets here are related to the vendor frontend dashboard 
+
+
 ## How to Use 
 
 The majority of these code snippets would go into your themes ```functions.php```. Please be sure to be using a child theme: https://developer.wordpress.org/themes/advanced-topics/child-themes/
