@@ -1,0 +1,26 @@
+<?php 
+/**
+ * Snippets related to the product edit form
+ */
+
+
+/**
+ * Enable the full WP Editor for the product description and short description. 
+ */
+add_filter( 'wcv_product_description_editor_settings', 'wcv_full_editor' ); 
+add_filter( 'wcv_product_short_description_editor_settings', 'wcv_full_editor' ); 
+function wcv_full_editor( $settings ){ 
+	$settings['teeny'] = false; 
+	return $settings; 
+}
+
+/**
+ * Make dimension fields required. 
+ */
+add_filter( 'wcv_product_length', 'wcv_make_field_required' ); 
+add_filter( 'wcv_product_width', 'wcv_make_field_required' ); 
+add_filter( 'wcv_product_height', 'wcv_make_field_required' ); 
+function wcv_make_field_required( $field ){ 
+    $field['custom_attributes'] = array( 'required' => '' );
+    return $field; 
+}
