@@ -3,8 +3,8 @@
 /** Make commission table in WP Admin filterable */
 
 // Add the column to commission table
-add_filter( 'wcvendors_commissions_columns', 'wcv_test_col' );
-function wcv_test_col( $columns ) {
+add_filter( 'wcvendors_commissions_columns', 'wcv_add_test_col' );
+function wcv_add_test_col( $columns ) {
 	$columns['testcol'] = 'Test Column';
 	return $columns;
 }
